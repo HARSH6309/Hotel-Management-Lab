@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management System</title>
+    <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+    <header>
+        <div class="navbar"></div>
+          <div class="nav-option">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">Reservations</a></li>
+                <li><a href="#">Transport</a></li>
+                <li><a href="#">Coupons & Deals</a></li>
+                <li><a href="#">Contact Us</a></li>
+
+            </ul>
+          </div>
+    </header>
+    <main>
+        <section class="rooms">
+            <h2>Types of Rooms</h2>
+            <ul>
+                <li><a href="#">Single Room</a></li>
+                <li><a href="#">Double Room</a></li>
+                <li><a href="#">Suite</a></li>
+            </ul>
+        </section>
+        <section class="reservations">
+            <h2>Make a Reservation</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone"><br><br>
+                <label for="room_type">Type of Room:</label>
+                <select id="room_type" name="room_type">
+                    <option value="single">Single Room</option>
+                    <option value="double">Double Room</option>
+                    <option value="suite">Suite</option>
+                </select><br><br>
+                <label for="checkin_date">Check-In Date:</label>
+                <input type="date" id="checkin_date" name="checkin_date"><br><br>
+                <label for="checkout_date">Check-Out Date:</label>
+                <input type="date" id="checkout_date" name="checkout_date"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Hotel Management System</p>
+    </footer>
+</body>
+</html>
